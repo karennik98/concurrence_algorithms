@@ -1,4 +1,4 @@
-#include "marge_sort.hpp"
+#include "merge_sort.hpp"
 
 #include <iostream>
 
@@ -6,7 +6,7 @@ int main()
 {
     std::vector<int> vec{4,9,7,3,1,9,9,14,5,6,4};
 
-    merge_sort<int>(vec, 0, vec.size());
+    concurrent_merge_sort<int>(vec, 0, vec.size());
     
     for(const auto& el : vec)
     {
